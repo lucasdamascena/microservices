@@ -7,6 +7,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/lucasgdamascena/microservice-config
+          uri: ${URI_REPOSITORIO}
           search-paths: 'greeting-service*'
+          username: ${USUARIO_GITHUB}
+          password: ${TOKEN}
         default-label: main
